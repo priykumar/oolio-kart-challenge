@@ -1,4 +1,0 @@
-{
-    "coupon_artifacts": ["couponbase1.gz", "couponbase2.gz", "couponbase3.gz"],
-    "valid_token_path": "valid_codes.txt"
-}
