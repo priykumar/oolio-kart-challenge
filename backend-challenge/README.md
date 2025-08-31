@@ -54,3 +54,35 @@ https://github.com/oolio-group/kart-challenge/tree/advanced-challenge/backend-ch
 1. Use this repository as a template and create a new repository in your account
 2. Start coding
 3. Share your repository
+
+## Getting Started
+**GET** /product
+```
+curl http://localhost:8080/product
+
+[{"id":"1","name":"Chicken Waffle","price":132,"category":"Waffle","image":{"thumbnail":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-thumbnail.jpg","mobile":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-mobile.jpg","tablet":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-tablet.jpg","desktop":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-desktop.jpg"}},
+{"id":"4","name":"Chocolate Waffle","price":132,"category":"Waffle","image":{"thumbnail":"https://orderfoodonline.deno.dev/public/images/chocolate-waffle-thumbnail.jpg","mobile":"https://orderfoodonline.deno.dev/public/images/chocolate-waffle-mobile.jpg","tablet":"https://orderfoodonline.deno.dev/public/images/chocolate-waffle-tablet.jpg","desktop":"https://orderfoodonline.deno.dev/public/images/chocolate-waffle-desktop.jpg"}}]
+```
+
+**GET** /product/{productId}
+```
+curl http://localhost:8080/product/1
+
+{"id":"1","name":"Chicken Waffle","price":132,"category":"Waffle","image":{"thumbnail":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-thumbnail.jpg","mobile":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-mobile.jpg","tablet":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-tablet.jpg","desktop":"https://orderfoodonline.deno.dev/public/images/chicken-waffle-desktop.jpg"}}
+```
+
+**POST** /order
+```
+curl -X POST "http://localhost:8080/order" \
+  -H "Content-Type: application/json" \
+  -H "api_key: apitest" \
+  -d '{
+    "couponCode": "CUMMU9543P",
+    "items": [
+      {
+        "productId": "1",
+        "quantity": 2
+      }]}'
+
+{"id":"83793602-e9aa-4125-8b82-e8033338ce6c","total":204.94,"discounts":59.05,"items":[{"productId":"1","quantity":2}]}
+```
