@@ -83,4 +83,3 @@ _By following these guidelines, you should be able to build a functional and vis
 - API specification: https://orderfoodonline.deno.dev/public/openapi.yaml
 - Figma design file: [design.fig](./design.fig)
 - Red Hat Text font: https://fonts.google.com/specimen/Red+Hat+Text
-
