@@ -55,6 +55,9 @@ https://github.com/oolio-group/kart-challenge/tree/advanced-challenge/backend-ch
 2. Start coding
 3. Share your repository
 
+## Flow Chart
+![Alt text](./oolio.png)
+
 ## API response
 **GET** /product
 ```
