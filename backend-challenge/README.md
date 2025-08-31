@@ -55,7 +55,7 @@ https://github.com/oolio-group/kart-challenge/tree/advanced-challenge/backend-ch
 2. Start coding
 3. Share your repository
 
-## Getting Started
+## API response
 **GET** /product
 ```
 curl http://localhost:8080/product
